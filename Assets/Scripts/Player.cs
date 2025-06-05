@@ -1,10 +1,10 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Player : MonoBehaviour // Parent Class
 {
     NavMeshAgent agent;
-
     public float speed = 20f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour // Parent Class
 
     public virtual void DisplayName()
     {
-        Debug.Log("Name Of Ships");
+        Debug.Log("Name");
     }
 
     public void HandleTarget()  // ABSTRACTION

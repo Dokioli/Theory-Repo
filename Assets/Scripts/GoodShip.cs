@@ -1,9 +1,12 @@
+using TMPro;
 using UnityEngine;
 
 public class GoodShip : Player        // INHERITANCE
 {
-    public override void DisplayName()
+    [SerializeField] TextMeshProUGUI shipName;
+    [SerializeField] string shipNamestring;
+    public override void DisplayName() // POLYMORPHISM
     {
-        Debug.Log(gameObject.name);
+        shipName.text = "Name: "+shipNamestring;
     }
 }
